@@ -1,0 +1,16 @@
+src/
+rollup.config.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock\.json
+node_modules/
+.idea/
+.eslintrc.yml
+.babelrc
+*.tgz
+dist/
+!dist/index.d.ts
+!dist/weil.esm.js
+

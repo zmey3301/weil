@@ -1,0 +1,45 @@
+---
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - prettier
+
+env:
+  browser: true
+  node: true
+  es6: true
+
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+
+plugins:
+  - "@typescript-eslint/eslint-plugin"
+  - prettier
+
+rules:
+  # TS is just too young to tell that things aren't null
+  # as it can't find out that some functions and declarations are checking for null.
+  "@typescript-eslint/no-non-null-assertion": off
+  "@typescript-eslint/no-use-before-define": error
+  "@typescript-eslint/ban-ts-comment": warn
+
+  no-alert: error
+  eqeqeq: error
+
+  no-useless-computed-key: warn
+  no-console: off
+  no-debugger: off
+  no-extra-parens: off
+  no-negated-in-lhs: error
+  no-shadow: error
+  no-label-var: error
+  no-undef-init: error
+  no-undefined: error
+  no-use-before-define: off
+#  prefer-object-has-own: error
+  no-useless-rename: error
+  prefer-regex-literals:
+    - error
+    - disallowRedundantWrapping: true

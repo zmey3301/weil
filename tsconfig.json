@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+//    "isolatedModules": true,
+    "declarationDir": "dist/types/",
+    "lib": ["ESNext", "dom"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

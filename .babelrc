@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    [
+      "@babel/transform-runtime",
+      {
+        "corejs": {
+          "proposals": true,
+          "version": 3
+        },
+        "version": "7.18.9"
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "bugfixes": true,
+        "corejs": {
+          "proposals": true,
+          "version": "3.24"
+        },
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}

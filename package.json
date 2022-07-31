@@ -1,0 +1,81 @@
+{
+  "name": "weil",
+  "description": "A WEird utIL collection",
+  "license": "MIT",
+  "author": "zmey3301 <mk.prlgn@gmail.com>",
+  "version": "0.0.1",
+  "module": "dist/weil.esm.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmey3301/weil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zmey3301/weil/issues"
+  },
+  "homepage": "https://github.com/zmey3301/weil#readme",
+  "scripts": {
+    "commit": "cz",
+    "postinstall": "is-ci || husky install",
+    "format": "prettier --write src",
+    "lint": "prettier --check src && eslint --ext .ts --ext .tsx src",
+    "build": "rollup --config",
+    "version": "conventional-changelog --infile CHANGELOG.md --same-file --preset custom-config && git add CHANGELOG.md",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "@babel/runtime-corejs3": "^7.18.9",
+    "@types/lodash-es": "^4.17.6",
+    "lodash-es": "^4.17.21"
+  },
+  "optionalDependencies": {
+    "react": "16.x || 17.x || 18.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-eslint": "^8.0.2",
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/react": "^18.0.15",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@typescript-eslint/typescript-estree": "^5.31.0",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-custom-config": "^0.3.1",
+    "conventional-github-releaser": "^3.1.5",
+    "core-js": "^3.24.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "is-ci": "^3.0.1",
+    "pinst": "^3.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "rollup": "^2.77.2",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-copy-merge": "^0.3.5",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "browserslist": [
+    "ie > 11",
+    "last 25 versions",
+    "not dead"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
