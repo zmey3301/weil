@@ -3,7 +3,7 @@
   "description": "A WEird utIL collection",
   "license": "MIT",
   "author": "zmey3301 <mk.prlgn@gmail.com>",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "module": "dist/weil.esm.js",
   "types": "dist/index.d.ts",
   "repository": {
