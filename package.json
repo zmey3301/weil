@@ -6,7 +6,6 @@
   "version": "0.0.3",
   "module": "dist/weil.esm.js",
   "types": "dist/index.d.ts",
-  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zmey3301/weil.git"
@@ -72,8 +71,8 @@
     "typescript": "^4.7.4"
   },
   "browserslist": [
-    "ie > 11",
     "last 25 versions",
+    "not IE > 0",
     "not dead"
   ],
   "config": {
