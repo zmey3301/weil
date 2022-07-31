@@ -4,6 +4,8 @@ import multi from "@rollup/plugin-multi-entry"
 import typescript from "@rollup/plugin-typescript"
 import copy from "rollup-plugin-copy-merge"
 import cleaner from "rollup-plugin-cleaner"
+import cjs from "@rollup/plugin-commonjs"
+import nodeResolve from "@rollup/plugin-node-resolve"
 
 export default {
   input: ["src/**/*.tsx", "src/**/*.ts"],
@@ -19,6 +21,8 @@ export default {
     /^react(?:\/|$)/
   ],
   plugins: [
+    cjs(),
+    nodeResolve(),
     multi(),
     cleaner({
       targets: [
