@@ -60,7 +60,7 @@ jobs:
           at: .
       - run:
           name: Generate GitHub Release
-          command: yarn conventional-github-releaser --token $GITHUB_TOKEN --preset custom-config
+          command: CONVENTIONAL_GITHUB_RELEASER_TOKEN=$GITHUB_TOKEN yarn conventional-github-releaser --preset custom-config
 workflows:
   lint-deploy:
     jobs:
