@@ -3,7 +3,7 @@
     "strict": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-//    "isolatedModules": true,
+    "isolatedModules": true,
     "declarationDir": "dist/types/",
     "lib": ["ESNext", "dom"],
     "target": "ESNext",
