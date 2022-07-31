@@ -6,6 +6,7 @@
   "version": "0.0.2",
   "module": "dist/weil.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zmey3301/weil.git"
